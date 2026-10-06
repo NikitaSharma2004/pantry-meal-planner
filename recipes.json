@@ -1,0 +1,200 @@
+[
+    {
+        "id": "r1",
+        "name": "Paneer Butter Masala",
+        "tag": "Rich Curry",
+        "time": "30 mins",
+        "servings": 2,
+        "ingredients": [
+            {
+                "item": "Paneer",
+                "qty": 200,
+                "unit": "g"
+            },
+            {
+                "item": "Butter",
+                "qty": 40,
+                "unit": "g"
+            },
+            {
+                "item": "Tomato",
+                "qty": 3,
+                "unit": "pcs"
+            },
+            {
+                "item": "Cream",
+                "qty": 50,
+                "unit": "ml"
+            }
+        ]
+    },
+    {
+        "id": "r2",
+        "name": "Classic Tomato Pasta",
+        "tag": "Italian",
+        "time": "20 mins",
+        "servings": 2,
+        "ingredients": [
+            {
+                "item": "Pasta",
+                "qty": 180,
+                "unit": "g"
+            },
+            {
+                "item": "Tomato",
+                "qty": 4,
+                "unit": "pcs"
+            },
+            {
+                "item": "Cheese",
+                "qty": 50,
+                "unit": "g"
+            },
+            {
+                "item": "Olive Oil",
+                "qty": 20,
+                "unit": "ml"
+            }
+        ]
+    },
+    {
+        "id": "r3",
+        "name": "Oatmeal Banana Bowl",
+        "tag": "Healthy Breakfast",
+        "time": "10 mins",
+        "servings": 1,
+        "ingredients": [
+            {
+                "item": "Oats",
+                "qty": 60,
+                "unit": "g"
+            },
+            {
+                "item": "Milk",
+                "qty": 250,
+                "unit": "ml"
+            },
+            {
+                "item": "Banana",
+                "qty": 1,
+                "unit": "pcs"
+            },
+            {
+                "item": "Honey",
+                "qty": 15,
+                "unit": "ml"
+            }
+        ]
+    },
+    {
+        "id": "r4",
+        "name": "Veg Fried Rice",
+        "tag": "Quick Dinner",
+        "time": "25 mins",
+        "servings": 2,
+        "ingredients": [
+            {
+                "item": "Rice",
+                "qty": 200,
+                "unit": "g"
+            },
+            {
+                "item": "Carrot",
+                "qty": 2,
+                "unit": "pcs"
+            },
+            {
+                "item": "Capsicum",
+                "qty": 1,
+                "unit": "pcs"
+            },
+            {
+                "item": "Soy Sauce",
+                "qty": 15,
+                "unit": "ml"
+            }
+        ]
+    },
+    {
+        "id": "r5",
+        "name": "Greek Salad Bowl",
+        "tag": "High Protein / Raw",
+        "time": "12 mins",
+        "servings": 1,
+        "ingredients": [
+            {
+                "item": "Cucumber",
+                "qty": 2,
+                "unit": "pcs"
+            },
+            {
+                "item": "Tomato",
+                "qty": 2,
+                "unit": "pcs"
+            },
+            {
+                "item": "Paneer",
+                "qty": 100,
+                "unit": "g"
+            },
+            {
+                "item": "Olive Oil",
+                "qty": 15,
+                "unit": "ml"
+            }
+        ]
+    },
+    {
+        "id": "r6",
+        "name": "Masala Dal Tadka",
+        "tag": "Comfort Food",
+        "time": "35 mins",
+        "servings": 3,
+        "ingredients": [
+            {
+                "item": "Yellow Dal",
+                "qty": 150,
+                "unit": "g"
+            },
+            {
+                "item": "Tomato",
+                "qty": 2,
+                "unit": "pcs"
+            },
+            {
+                "item": "Butter",
+                "qty": 30,
+                "unit": "g"
+            },
+            {
+                "item": "Rice",
+                "qty": 250,
+                "unit": "g"
+            }
+        ]
+    },
+    {
+        "id": "r7",
+        "name": "Grilled Cheese Sandwich",
+        "tag": "Snack",
+        "time": "10 mins",
+        "servings": 1,
+        "ingredients": [
+            {
+                "item": "Bread",
+                "qty": 4,
+                "unit": "pcs"
+            },
+            {
+                "item": "Cheese",
+                "qty": 60,
+                "unit": "g"
+            },
+            {
+                "item": "Butter",
+                "qty": 20,
+                "unit": "g"
+            }
+        ]
+    }
+]

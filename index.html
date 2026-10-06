@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryMeal Pro — Smart Meal Planner & Consolidator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="brand-badge">BETA v2.0</div>
+                <h1>PantryMeal <span>Pro</span></h1>
+                <p>Smart weekly meal schedule, automated pantry deduction & zero-waste shopping list</p>
+            </div>
+            <div class="header-stats">
+                <div class="stat-pill"><span id="statMeals">0</span> Meals Scheduled</div>
+                <div class="stat-pill"><span id="statExpiring">0</span> Expiring Soon</div>
+            </div>
+        </header>
+
+        <main class="dashboard-grid">
+            <!-- Column 1: Recipe Library -->
+            <section class="card-panel" id="recipes-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Recipe Library</h2>
+                        <p class="subtitle">Drag cards onto your weekly grid</p>
+                    </div>
+                    <span class="count-pill" id="recipeCount">7 recipes</span>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" id="recipeSearch" placeholder="Search recipe or tag..." />
+                </div>
+
+                <div class="cards-scroller" id="recipeList">
+                    <!-- Dynamic cards injected here -->
+                </div>
+            </section>
+
+            <!-- Column 2: Weekly Planner Grid -->
+            <section class="card-panel" id="planner-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Weekly Schedule</h2>
+                        <p class="subtitle">Monday through Sunday drop zones</p>
+                    </div>
+                    <button class="btn-ghost" id="clearPlanBtn">Reset Week</button>
+                </div>
+
+                <div class="planner-grid" id="plannerGrid">
+                    <!-- Days Monday to Sunday generated here -->
+                </div>
+            </section>
+
+            <!-- Column 3: Pantry & Shopping -->
+            <section class="card-panel" id="logistics-panel">
+                <!-- Section A: Pantry -->
+                <div class="panel-header">
+                    <div>
+                        <h2>Pantry Inventory</h2>
+                        <p class="subtitle">Track shelf-life & available stock</p>
+                    </div>
+                </div>
+
+                <form id="pantryForm" class="pantry-grid-form">
+                    <input type="text" id="pantryItem" placeholder="Item Name (e.g. Cheese)" required
+                        autocomplete="off" />
+                    <input type="number" id="pantryQty" placeholder="Qty" min="1" step="any" required />
+                    <input type="text" id="pantryUnit" placeholder="Unit (g/ml/pcs)" required />
+                    <input type="date" id="pantryExpiry" required />
+                    <button type="submit" class="btn-primary">+ Add to Pantry</button>
+                </form>
+
+                <div class="list-container">
+                    <ul id="pantryList" class="styled-list"></ul>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <!-- Section B: Smart Shopping List -->
+                <div class="panel-header">
+                    <div>
+                        <h2>Smart Shopping List</h2>
+                        <p class="subtitle">Ingredients consolidated & subtracted</p>
+                    </div>
+                    <button class="btn-ghost" id="copyBtn">📋 Copy List</button>
+                </div>
+
+                <div class="list-container">
+                    <ul id="shoppingList" class="shopping-checklist"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
